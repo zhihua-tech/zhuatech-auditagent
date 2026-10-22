@@ -1,5 +1,9 @@
 [简体中文](README.md) | **English**
 
+## Functional update: Reproducible stratified sampling
+
+Produces reproducible stratified samples by SHA-256 ordering of a seed and record ID. Decimal ceiling avoids over-sampling from floating-point errors. Available to signed-in users with editable inputs, explicit validation and JSON export. See [API, examples and limitations](docs/AI_BUSINESS_UPGRADE_20261023.md). No external model calls or automatic business changes. Existing license and contact details are retained.
+
 # ZhuaTech AuditAgent
 
 > A source-available enterprise project by [ZhuaTech](https://www.zhuatech.cn/) for enterprise security, identity, compliance, and risk governance.
