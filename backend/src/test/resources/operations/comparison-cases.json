@@ -1,0 +1,57 @@
+[
+  {
+    "patch": {},
+    "expected": {
+      "decision": "HOLD",
+      "openExceptionAmount": "#5000"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "HOLD",
+      "openExceptionAmount": "#5000"
+    }
+  },
+  {
+    "patch": {
+      "openTolerance": "5000"
+    },
+    "expected": {
+      "decision": "PASS"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "HOLD",
+      "openExceptionAmount": "#5000"
+    }
+  },
+  {
+    "patch": {
+      "sampleAmount": "600000"
+    },
+    "expected": {
+      "decision": "HOLD"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "HOLD",
+      "openExceptionAmount": "#5000"
+    }
+  },
+  {
+    "patch": {
+      "populationAmount": "0",
+      "sampleAmount": "0",
+      "exceptions": "0",
+      "remediated": "0"
+    },
+    "expected": {
+      "decision": "REVIEW",
+      "coveragePct": "N/A"
+    },
+    "error": false,
+    "baseline": {
+      "decision": "HOLD",
+      "openExceptionAmount": "#5000"
+    }
+  }
+]

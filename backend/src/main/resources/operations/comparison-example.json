@@ -1,0 +1,6 @@
+{
+  "patch": {
+    "openTolerance": "5000"
+  },
+  "description": "未整改金额容忍改为5000"
+}
